@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.BitSet;
 import java.util.function.BiFunction;
 
-public class SeventhDayFP {
+public class SeventhDaySP {
 	private static final LinkedList<String[]> commands = new LinkedList<>();
 	private static final HashMap<String, BitSet> register = new HashMap<>();
 
@@ -131,7 +131,7 @@ public class SeventhDayFP {
 
 							if(input == null) break;
 
-							register.put(command[1], input);
+							register.put(command[1], command[1].equals("b") ? convertIntegerToBitSet(3176) : input);
 							iterator.remove();
 						}
 					}
